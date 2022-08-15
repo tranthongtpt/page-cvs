@@ -1,0 +1,54 @@
+.js-scroll{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.js-scroll.scrolled{
+    opacity: 1;
+}
+.scrolled.fade-in {
+    animation: fade-in 1s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+}
+.scrolled.animate__animated {
+    animation-duration: 3s;
+    animation: fade-in-bottom 1s ease-in-out both;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+.scrolled.animate__fadeInRight{
+    animation: slide-in-right 2s ease-in-out both;
+}
+.scrolled.animate__fadeInLeft{
+    animation: slide-in-left 1s ease-in-out both;
+}
+@keyframes slide-in-right{
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

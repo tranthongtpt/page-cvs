@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
-
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/swiper.css">
+    <link rel="stylesheet" href="/css/handlescroll.css">
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- end cdn -->
     <title>CVS</title>
 </head>
 
@@ -20,21 +26,23 @@
     <section id="header">
         <header class="header container mx-auto">
             <div class="site-nav-logo">
-                <a href="/">
-                    <img src="/img/cropped-logo-cvs.png" alt="CVS">
+                <a href="#">
+                    <img src="./img/cropped-logo-cvs.png" alt="CVS">
                 </a>
             </div>
-            <div>
+            <div class="nav-list">
                 <nav class="site-nav-items">
                     <ul class="site-nav-desktop-nav">
-                        <li class="site-nav-desktop-item btn button-text">Home</li>
-                        <li class="site-nav-desktop-item btn button-text">Features</li>
-                        <li class="site-nav-desktop-item btn button-text">Porifolio</li>
-                        <li class="site-nav-desktop-item btn button-text">Team</li>
-                        <li class="site-nav-desktop-item btn button-text">Partners</li>
+                        <li><a class="site-nav-desktop-item btn button-text" href="#home_intro">Home</a></li>
+                        <li><a class="site-nav-desktop-item btn button-text" href="#home_future">Future</a></li>
+                        <li><a class="site-nav-desktop-item btn button-text" href="#home_portfolio">porifolio</a></li>
+                        <li><a class="site-nav-desktop-item btn button-text" href="#home_3dmodel">3D Model</a></li>
+                        <li><a class="site-nav-desktop-item btn button-text" href="#home_post">post</a></li>
+                        <li><a class="site-nav-desktop-item btn button-text" href="#home_team">team</a></li>
+                        <li><a class="site-nav-desktop-item btn button-text" href="#home_partners">partners</a></li>
                     </ul>
                     <div class="df">
-                        <a href="site-nav-contact" class="btn button-text btn-blue fs-12 b-contact">
+                        <a href="#home_contact" class="btn button-text btn-blue fs-12 b-contact">
                             Contact
                         </a>
                     </div>
@@ -81,46 +89,46 @@
                         3D Simulations based on the newest technologies</p>
                 </div>
                 <div class="home_future-bottom">
-                    <div class="home_future-items">
+                    <div class="home_future-items js-scroll animate__fadeInLeft">
                         <div class="icon"><img
-                                src="https://img.icons8.com/external-filled-outline-perfect-kalash/64/000000/external-Mission-management-filled-outline-perfect-kalash.png" />
+                                src="https://img.icons8.com/external-filled-outline-perfect-kalash/100/000000/external-Mission-management-filled-outline-perfect-kalash.png" />
                         </div>
                         <h2>mission</h2>
                         <p>Our main task is R&D for 3D simulations, promoting IT applications for many sectors,
                             especially for the Business, Education and Tourism & Hospitality Industries.</p>
                     </div>
-                    <div class="home_future-items">
+                    <div class="home_future-items js-scroll animate__fadeInRight">
                         <div class="icon"><img
-                                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-competence-team-building-flaticons-lineal-color-flat-icons.png" />
+                                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/000000/external-competence-team-building-flaticons-lineal-color-flat-icons.png" />
                         </div>
                         <h2>competence</h2>
                         <p>CVS is competent in Project Management as well as Customer Services and capable of developing
                             and managing large, long-term and complex home_portfolio.</p>
                     </div>
-                    <div class="home_future-items">
+                    <div class="home_future-items js-scroll animate__fadeInLeft">
                         <div class="icon"><img
-                                src="https://img.icons8.com/external-others-pike-picture/50/000000/external-experience-values-others-pike-picture.png" />
+                                src="https://img.icons8.com/external-others-pike-picture/100/000000/external-experience-values-others-pike-picture.png" />
                         </div>
                         <h2>experience</h2>
                         <p>CVS develops many software and hardware applications and deploys home_portfolio related to
                             simulation, and reconstruction using 3D Virtual Reality and Augmented Reality technology.
                         </p>
                     </div>
-                    <div class="home_future-items">
-                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+                    <div class="home_future-items js-scroll animate__fadeInRight">
+                        <div class="icon"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/100/000000/external-research-market-research-flaticons-lineal-color-flat-icons-6.png" /></div>
                         <h2>research</h2>
                         <p>CVS actively researches solutions for modeling, reconstruction and re-creation of 3D objects,
                             building 3d spaces, and simulations of interactive controls.</p>
                     </div>
-                    <div class="home_future-items">
-                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+                    <div class="home_future-items js-scroll animate__fadeInLeft">
+                        <div class="icon"><img src="https://img.icons8.com/arcade/100/000000/experimental-goal-arcade.png" /></div>
                         <h2>industry 4.0 focus</h2>
                         <p>CVS is focused on researching and deploying the latest developments and solutions for 3D
                             visualization, virtual reality, augmented reality, artifical intelligence and the Internet
                             of Things, in answer to the needs of O.B.O.R for Vietnam and globally.</p>
                     </div>
-                    <div class="home_future-items">
-                        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+                    <div class="home_future-items js-scroll animate__fadeInRight">
+                        <div class="icon"><img src="https://img.icons8.com/external-colours-bomsymbols-/91/000000/external-asset-financial-and-business-economics-colours-bomsymbols-.png" /></div>
                         <h2>cutting-edge</h2>
                         <p>CVS follows the latest technological developments for user interaction with objects in 3D
                             space, through novel projection equipment, computers, control devices, and peripheral
@@ -130,11 +138,34 @@
                 </div>
             </div>
         </section>
-
         <!-- home human3d -->
-        <section id="home_human3d">
-            <div class="home_human3d container">
-
+        <section id="home_3dmodel">
+            <div class="home_3dmodel container">
+                <div class="js-scroll animate__bounceInRight">
+                    <h1 class="section-title">Our software makes health information visual</h1>
+                </div>
+                <div style="height: 500px; width: 900px; ">
+                    <!-- <iframe style="height: inherit; width: inherit;" src="https://human.biodigital.com/view?id=production/maleAdult/migraine_v02&lang=en&ref=share" frameborder="0" ></iframe> -->
+                </div>        
+            </div>
+        </section>
+        <!-- home - banner  -->
+        <section id="home_banner">
+            <div class="home_banner">
+                <div class="container-1">
+                    <div class="box-123">         
+                        <img src="/img/The_New_York_Times_logo.png" alt="">
+                        <p>"... the virtual body as the health equivalent of Google Maps."</p>
+                    </div>
+                    <div class="box-123">
+                        <img src="/img/ABC_News_logo_2021.svg.png" alt="">
+                        <p>"Think: Google Earth meets the human body."</p>
+                    </div>
+                    <div class="box-123">
+                        <img src="/img/wired-logo-transparent.png" alt="">
+                        <p>"A Digital Revolution for Studying Human Anatomy."</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- home portfolio -->
@@ -217,83 +248,304 @@
                 </div>
             </div>
         </section>
+        <!-- home post -->
+        <section id="home_post">
+            <div class="home_post container">
+                <div>
+                    <h1 class="section-title">post</h1>
+                </div>
+                <div class="posts">
+                    <div class="blog-slider">
+                        <div class="blog-slider__wrp swiper-wrapper">
+                          <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                              
+                              <img src="/img/Dental-1-480x300.jpg" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                              <span class="blog-slider__code">March 22, 2021</span>
+                              <div class="blog-slider__title">startinf from version 3.0</div>
+                              <div class="blog-slider__text">
+                                <p> Next, require the module and instantiate a mailgun client by calling new Mailgun(formData) and then using mailgun.client setup the client with basic auth credentials (username: 'api', key: 'key-yourke...  </p>
+                                </div>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
+                            </div>
+                          </div>
+                          <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                              <img src="/img/Muti-User.png" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                              <span class="blog-slider__code">March 22, 2018</span>
+                              <div class="blog-slider__title">Multi-User Interactive VR/AR</div>
+                              <div class="blog-slider__text">
+                                <p>Augmented Reality and Virtual Reality technology and computer network technology are developing rapidly, and AR/VR technology is made great progress in our decade. Development of scalable, distribute...</p> </div>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
+                            </div>
+                          </div>
+                          
+                          <div class="blog-slider__item swiper-slide">
+                            <div class="blog-slider__img">
+                              <img src="/img/medical.jpg" alt="">
+                            </div>
+                            <div class="blog-slider__content">
+                              <span class="blog-slider__code">March 22, 2017</span>
+                              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                              <div class="blog-slider__text">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</p>
+                              </div>
+                              <a href="#" class="blog-slider__button">READ MORE</a>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="blog-slider__pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- home team -->
         <section id="home_team">
             <div class="home_team container">
-                <div class="container">
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="https://image.ibb.co/dUTfmJ/profile_img.jpg" alt="profile one">
-                            </div>
-                            <ul class="social-icons">
-                                <li>
-                                    <a href="">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="details">
-                                <h2>John Smith
-                                    <br>
-                                    <span class="job-title">UI Developer</span>
-                                </h2>
+                <div class="title">
+                    <h1 class="section-title">team</h1>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-wrapper">
+                                <div class="card profile-two">
+                                    <div class="card-image profile-img--two">
+                                        <img src="./img/person-demo.png" alt="profile two">
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="details jane">
+                                        <h2>Jane Doe
+                                            <br>
+                                            <span class="job-title">UI Designer</span>
+                                        </h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div><!-- end box wrapper -->
+                        <div class="swiper-slide">
+                            <div class="card-wrapper">
+                                <div class="card profile-two">
+                                    <div class="card-image profile-img--two">
+                                        <img src="./img/person-demo.png" alt="profile two">
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="details jane">
+                                        <h2>Jane Doe
+                                            <br>
+                                            <span class="job-title">UI Designer</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-wrapper">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="./img/person-demo.png" alt="profile one">
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="details">
+                                        <h2>John Smith
+                                            <br>
+                                            <span class="job-title">UI Developer</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-wrapper">
+                                <div class="card profile-two">
+                                    <div class="card-image profile-img--two">
+                                        <img src="./img/person-demo.png" alt="profile two">
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="details jane">
+                                        <h2>Jane Doe
+                                            <br>
+                                            <span class="job-title">UI Designer</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-wrapper">
+                                <div class="card profile-two">
+                                    <div class="card-image profile-img--two">
+                                        <img src="./img/person-demo.png" alt="profile two">
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="details jane">
+                                        <h2>Jane Doe
+                                            <br>
+                                            <span class="job-title">UI Designer</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-wrapper">
+                                <div class="card profile-two">
+                                    <div class="card-image profile-img--two">
+                                        <img src="./img/person-demo.png" alt="profile two">
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="details jane">
+                                        <h2>Jane Doe
+                                            <br>
+                                            <span class="job-title">UI Designer</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-wrapper">
+                                <div class="card profile-two">
+                                    <div class="card-image profile-img--two">
+                                        <img src="./img/person-demo.png" alt="profile two">
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="details jane">
+                                        <h2>Jane Doe
+                                            <br>
+                                            <span class="job-title">UI Designer</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-wrapper">
+                                <div class="card profile-two">
+                                    <div class="card-image profile-img--two">
+                                        <img src="./img/person-demo.png" alt="profile two">
+                                    </div>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="details jane">
+                                        <h2>Jane Doe
+                                            <br>
+                                            <span class="job-title">UI Designer</span>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="card-wrapper">
-                        <div class="card profile-two">
-                            <div class="card-image profile-img--two">
-                                <img src="https://image.ibb.co/c9rY6J/profile02.jpg" alt="profile two">
-                            </div>
-                            <ul class="social-icons">
-                                <li>
-                                    <a href="">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fab fa-dribbble"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="details jane">
-                                <h2>Jane Doe
-                                    <br>
-                                    <span class="job-title">UI Designer</span>
-                                </h2>
-                            </div>
-                        </div>
-                    </div><!-- END box wrapper -->
-                </div><!-- END container -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
             </div>
         </section>
 
-        <section id="home_partners">
+        <section id="home_partners" style="background:#f3f4f5">
             <div class="home_partners container">
                 <div class="home_partners-header">
-                    <h1>Partners</h1>
+                    <h1 class="section-title">Partners</h1>
                 </div>
 
                 <div class="home_partners-logo_brand">
-                    <div class="slider">
+                    <div class="scroll-slide">
                         <div class="slide">
                         </div>
                     </div>
@@ -304,7 +556,8 @@
 
         <section id="home_contact">
             <div class="home_contact container">
-                <div id="map"></div>
+                <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d261.3339857723163!2d108.16024991603324!3d16.049435575845965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421938d45c1405%3A0x8595468e335a0187!2zMTIwIEhvw6BuZyBNaW5oIFRo4bqjbywgSG_DoCBLaMOhbmggTmFtLCBMacOqbiBDaGnhu4N1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1660094743865!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
                 <div class="map-c">
                     <h1>Contact us</h1>
                     <p>We are the Company for Visualization & Simulation (CVS) for Research & Development of handcrafted
@@ -312,71 +565,95 @@
                     </p>
                     <div class="det"><i class="fa fa-map-marker"></i> 2th Floor, 204 Room – Building E, 120 Hoang Minh
                         Thao, Da Nang, Viet Nam.</div>
-                    <div class="det"><i class="fa fa-email"></i> cvs@duytan.edu.vn</div>
+                    <div class="det"><i class="fas fa-envelope"></i> cvs@duytan.edu.vn</div>
                     <div class="det"><i class="fa fa-globe"></i> cvs.duytan.edu.vn</div>
-                    <center>
+                    <div>
                         <button class="fa fa-car"></button>
                         <button class="fa fa-envelope"></button>
-                    </center>
+                    </div>
                 </div>
             </div>
         </section>
-    </div>
-
-    <div id="home" class="home" style="visibility: inherit; opacity:1">
-        <div class="scrollable" style="position: fixed; transform: translate3d(0,0,0);">
-            <div class="page-wrapper">
-
-                <section class="home_intro">
-                    <div class="video-background">
-                        <div class="home_intro_videos">
-                            <video class="intro" muted playsinline>
-                                <source src="assets/images/frontpage/human_body1.mp4" type="video/mp4" />
-                            </video>
-                            <video class="intro-loop" muted playsinline loop>
-                                <source src="assets/images/frontpage/human_body1.mp4" type="video/mp4" />
-                            </video>
-                        </div>
+        <section id="footer">
+            <div class="footer container">
+                <div class="brand">
+                    <img src="./img/cropped-logo-cvs.png" alt="">
+                </div>
+                <p>Copyright © 2020 CVS. All rights reserved</p>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt=""></a>
+                        <a><img src="https://img.icons8.com/bubbles/100/000000/apple-mail.png" alt=""></a>
+                        <a><img src="https://img.icons8.com/bubbles/100/000000/domain.png" alt=""></a>
                     </div>
-                    <div class="home_titles">
-                        <h1 class="title">
-                            <span>Envoyez des demandes<br />de paiements</span>
-                            <span>et soyez<br />payé rapidement !</span>
-                        </h1>
-                        <h2 class="baseline">
-                            86% des demandes de paiement effectuées via Plink sont payées
-                            dans les 12 heures.
-                        </h2>
-                    </div>
-                </section>
-
-                <section class="home_future">
-                    <div class="home_tiles">
-                        <h1>ho</h1>
-                        <h2>hihihih</h2>
-                    </div>
-
-                </section>
-                <section class="home_human3d">
-                    <img src="/img/20181214101754.png" alt="">
-                </section>
-                <section class="portfolio">
-                    <p>12312312312321</p>
-                </section>
-                <section class="team">
-                    <p>123123123213213</p>
-                </section>
-                <section class="partners">
-                    <p>123123123213213</p>
-                </section>
-                <section class="contact">
-                    <p>123123123213213</p>
-                </section>
+                </div>
             </div>
-        </div>
-    </div>
-    </div> -->
+        </section>
 
+    </div>
+
+    <!-- source --- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        //   slidesPerGroup: 5,
+          loop: true,
+          autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.75": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.50": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          "@2.0": {
+            slidesPerView: 5,
+            spaceBetween: 60,
+          },
+        },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+
+        var swiper = new Swiper('.blog-slider', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        mousewheel: {
+            invert: false,
+        },
+        // autoHeight: true,
+        pagination: {
+            el: '.blog-slider__pagination',
+            clickable: true,
+        }
+    });
+    </script>
+    <script src="/js/app.js"></script>
+    
 </body>
 
 </html>
