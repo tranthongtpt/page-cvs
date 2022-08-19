@@ -490,8 +490,6 @@ section{
 }
 #home_banner .home_banner .container-1 p{
     text-align: center;
-    /* padding-top: 1rem; */
-    /* max-width: 20rem; */
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 0 !important;
@@ -502,7 +500,6 @@ section{
 }
 #home_banner .home_banner .container-1 .box-123{
     width: calc(100% / 3);
-    /* padding: 2rem; */
     color: #fff;
 }
 
@@ -614,13 +611,37 @@ section{
     font-size: 4rem;
 	font-weight: 500;
 }
-.scroll-slide{
-    height: 567px;
-    margin:auto;
+
+.home_partners--container{
+    width: 100%;
     overflow: hidden;
-    position: relative;
- 
+    height: 567px ;
 }
+.scroll-slide{
+  height: 233px;
+  width: 4500px;
+  margin-bottom: 5px;
+  font-size: 0;
+}
+.scroll-slide img{
+    width: 1920px;
+    height: 567px;
+    transition: all .5 ease;
+}
+.scroll-slide img:first-child{
+    animation: bannermove 30s linear infinite;
+}
+@keyframes bannermove {
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -1920px;
+    }
+}
+
+
+
 .slide{
     background: url('../img/logo-brand.png') repeat-x;
     height: inherit;
@@ -628,11 +649,11 @@ section{
     animation: scroll-slide 40s linear infinite running;
 }
 
+
 /* home contact */
 #home_contact .home_contact {
     max-width: 1200px;
     height: 530px;
-    /* margin: calc(50vh - 190px) auto; */
     margin: 14vh auto;
     box-shadow: 0 0 40px -10px black;
     background: rgb(240, 240, 240);
@@ -659,7 +680,6 @@ section{
   h1 {
     margin: 0;
     font-weight: normal;
-    /* color: rgb(60, 60, 70); */
     font-size: 28px
   }
   
@@ -776,13 +796,6 @@ section{
         transform: translate(-3840px);
     }
 }
-
-
-
-
-
-
-
 
 
 @media only screen and (min-width: 768px) {
